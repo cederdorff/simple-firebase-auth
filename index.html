@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Simple SPA - Tabs</title>
+</head>
+
+<body>
+    <!-- Nav Bar with custom links -->
+    <!-- The href must match with an id of a view (section) -->
+    <nav>
+        <a href="#home" class="view-link">Home</a>
+        <a href="#news" class="view-link">News</a>
+        <a href="#about" class="view-link">About</a>
+        <a href="#contact" class="view-link">Contact</a>
+    </nav>
+
+    <!-- Views -->
+    <!-- All views (sections) must have an id -->
+    <main>
+        <!-- Home View -->
+        <!-- Route: #home -->
+        <section id="home" class="view-content">
+            <h2>Home</h2>
+            <p>Home is where the heart is 💛</p>
+            <p>Oh My, sounds like a bad movie!</p>
+        </section>
+
+        <!-- News View -->
+        <!-- Route: #news -->
+        <section id="news" class="view-content">
+            <h2>News</h2>
+            <p>Some news this fine day 🎉</p>
+        </section>
+
+        <!-- About View -->
+        <!-- Route: #about -->
+        <section id="about" class="view-content">
+            <h2>About</h2>
+            <p>Who we are and what we do 🤷🏼‍♂️</p>
+        </section>
+
+        <!-- Contact View -->
+        <!-- Route: #contact -->
+        <section id="contact" class="view-content">
+            <h2>Contact</h2>
+            <p>Get in touch, or swing by for a cup of coffee ☕️</p>
+            <p>I'm just one arm away 🤷🏼‍♂️</p>
+        </section>
+
+        <!-- Sign In View -->
+        <!-- Route: #signin -->
+        <section id="signin" class="view-content">
+            <h2>Sign In</h2>
+            <p>Sign in to my single page app ✨</p>
+            <p class="login-message"></p>
+            <form id="form-signin">
+                <input name="mail" type="email" placeholder="Type email" />
+                <input name="password" type="password" placeholder="Password" />
+                <button>Sign In</button>
+            </form>
+            <p>Don't have an account?<a href="#signup">Go to Sign up</a></p>
+        </section>
+
+        <!-- Sign In View -->
+        <!-- Route: #signin -->
+        <section id="signup" class="view-content">
+            <h2>Sign Up</h2>
+            <p>Create an account to get access 🎉</p>
+            <p class="signup-message"></p>
+            <form id="form-signup">
+                <input name="mail" type="email" placeholder="Type email" autocomplete="new-email" />
+                <input name="password" type="password" placeholder="Password" autocomplete="new-password" />
+                <button>Sign up</button>
+            </form>
+            <p>Have an account? <a href="#signin">Go to Sign In</a></p>
+        </section>
+    </main>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
