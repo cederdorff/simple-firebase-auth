@@ -33,6 +33,7 @@ nav {
     left: 0;
     right: 0;
     text-align: center;
+    animation: fadeIn 0.4s;
 }
 
 @media (min-width: 600px) {
@@ -66,9 +67,14 @@ nav a.active {
     color: var(--green);
 }
 
+nav.hide {
+    display: none;
+}
+
 .view-content {
     display: none;
     padding: 248px 2em;
+    animation: fadeIn 0.4s;
 }
 
 @media (min-width: 600px) {
@@ -123,4 +129,16 @@ input {
 #signin,
 #signup {
     text-align: center;
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

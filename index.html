@@ -14,9 +14,9 @@
     <!-- The href must match with an id of a view (section) -->
     <nav>
         <a href="#home" class="view-link">Home</a>
-        <a href="#news" class="view-link">News</a>
         <a href="#about" class="view-link">About</a>
         <a href="#contact" class="view-link">Contact</a>
+        <a href="#profile" class="view-link">Profile</a>
     </nav>
 
     <!-- Views -->
@@ -30,12 +30,6 @@
             <p>Oh My, sounds like a bad movie!</p>
         </section>
 
-        <!-- News View -->
-        <!-- Route: #news -->
-        <section id="news" class="view-content">
-            <h2>News</h2>
-            <p>Some news this fine day 🎉</p>
-        </section>
 
         <!-- About View -->
         <!-- Route: #about -->
@@ -52,12 +46,21 @@
             <p>I'm just one arm away 🤷🏼‍♂️</p>
         </section>
 
+        <!-- Profile View -->
+        <!-- Route: #profile -->
+        <section id="profile" class="view-content">
+            <h2>Profile</h2>
+            <p>Welcome to my profile 🎉</p>
+            <p>Signed in user: <span class="mail"></span></p>
+            <button id="btn-sign-out">Sign Out</button>
+        </section>
+
         <!-- Sign In View -->
         <!-- Route: #signin -->
         <section id="signin" class="view-content">
             <h2>Sign In</h2>
             <p>Sign in to my single page app ✨</p>
-            <p class="login-message"></p>
+            <p id="signin-message"></p>
             <form id="form-signin">
                 <input name="mail" type="email" placeholder="Type email" />
                 <input name="password" type="password" placeholder="Password" />
@@ -66,8 +69,8 @@
             <p>Don't have an account?<a href="#signup">Go to Sign up</a></p>
         </section>
 
-        <!-- Sign In View -->
-        <!-- Route: #signin -->
+        <!-- Sign Up View -->
+        <!-- Route: #signup -->
         <section id="signup" class="view-content">
             <h2>Sign Up</h2>
             <p>Create an account to get access 🎉</p>
