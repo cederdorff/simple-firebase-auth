@@ -122,8 +122,8 @@ input {
 }
 
 /* ---------- login styling ---------- */
-.login-message {
-    color: var(--text-color-error);
+#signin-message {
+    color: var(--text-color-danger);
 }
 
 #signin,
